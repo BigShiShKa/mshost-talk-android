@@ -6,6 +6,24 @@
  * SPDX-FileCopyrightText: 2022 Tim Krüger <t@timkrueger.me>
  * SPDX-License-Identifier: GPL-3.0-or-later
  */
+pluginManagement {
+    repositories {
+        gradlePluginPortal {
+            if (providers.gradleProperty('mshostMavenMirror').getOrElse('false') == 'true') {
+                content { includeModuleByRegex('.*', '.*\\.gradle\\.plugin') }
+            }
+        }
+        google()
+        if (providers.gradleProperty('mshostMavenMirror').getOrElse('false') == 'true') {
+            maven { url = 'https://maven-central.storage-download.googleapis.com/maven2/' }
+        }
+        if (providers.gradleProperty('mshostMavenMirror').getOrElse('false') != 'true') {
+            mavenCentral()
+        }
+    }
+}
+
+rootProject.name = 'MSHost Talk Android'
 include ':app'
 
 //// uncomment to use local build of common-ui

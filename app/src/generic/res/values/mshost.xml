@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  SPDX-FileCopyrightText: 2026 MSHost contributors
+  SPDX-License-Identifier: GPL-3.0-or-later
+-->
+<resources>
+    <string name="nc_app_name" translatable="false">MSHost Talk</string>
+    <string name="nc_app_product_name" translatable="false">MSHost Talk</string>
+    <string name="nc_server_product_name" translatable="false">MSHost Cloud</string>
+    <string name="weblogin_url" translatable="false">https://cloud.mshostcloud.org</string>
+    <string name="nc_import_accounts_from" translatable="false"></string>
+    <string name="nc_import_account_type" translatable="false"></string>
+    <string name="nc_report_email" translatable="false"></string>
+    <string name="nc_privacy_url" translatable="false"></string>
+    <bool name="hide_provider">true</bool>
+    <bool name="is_branded_client">true</bool>
+    <color name="colorPrimary">#16223D</color>
+    <color name="colorPrimaryDark">#10182D</color>
+</resources>

@@ -220,7 +220,7 @@ class ContactAddressBookWorker(val context: Context, workerParameters: WorkerPar
             .appendQueryParameter(ContactsContract.RawContacts.ACCOUNT_TYPE, accountType)
             .appendQueryParameter(
                 ContactsContract.Data.MIMETYPE,
-                "vnd.android.cursor.item/vnd.com.nextcloud.talk2.chat"
+                "vnd.android.cursor.item/vnd.org.mshostcloud.talk.chat"
             )
             .build()
 
@@ -275,7 +275,7 @@ class ContactAddressBookWorker(val context: Context, workerParameters: WorkerPar
                 .appendQueryParameter(ContactsContract.RawContacts.ACCOUNT_TYPE, accountType)
                 .appendQueryParameter(
                     ContactsContract.Data.MIMETYPE,
-                    "vnd.android.cursor.item/vnd.com.nextcloud.talk2.chat"
+                    "vnd.android.cursor.item/vnd.org.mshostcloud.talk.chat"
                 )
                 .build()
 
@@ -348,7 +348,7 @@ class ContactAddressBookWorker(val context: Context, workerParameters: WorkerPar
                     .withValueBackReference(ContactsContract.Data.RAW_CONTACT_ID, 0)
                     .withValue(
                         ContactsContract.Data.MIMETYPE,
-                        "vnd.android.cursor.item/vnd.com.nextcloud.talk2.chat"
+                        "vnd.android.cursor.item/vnd.org.mshostcloud.talk.chat"
                     )
                     .withValue(ContactsContract.Data.DATA1, cloudId)
                     .withValue(

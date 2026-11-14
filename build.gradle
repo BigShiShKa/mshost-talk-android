@@ -16,8 +16,13 @@ buildscript {
 
     repositories {
         google()
+        if (providers.gradleProperty('mshostMavenMirror').getOrElse('false') == 'true') {
+            maven { url = 'https://maven-central.storage-download.googleapis.com/maven2/' }
+        }
         gradlePluginPortal()
-        mavenCentral()
+        if (providers.gradleProperty('mshostMavenMirror').getOrElse('false') != 'true') {
+            mavenCentral()
+        }
     }
 
     dependencies {
@@ -42,7 +47,11 @@ configurations.configureEach {
 allprojects {
     repositories {
         google()
-        mavenCentral()
+        if (providers.gradleProperty('mshostMavenMirror').getOrElse('false') == 'true') {
+            maven { url = 'https://maven-central.storage-download.googleapis.com/maven2/' }
+        } else {
+            mavenCentral()
+        }
         maven {
             url = 'https://jitpack.io'
             content {

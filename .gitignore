@@ -45,6 +45,7 @@ build
 fastlane/Fastfile
 fastlane/ruby
 *.hprof
+/branding/__pycache__/
 captures/
 .navigation/
 app/gplay/
@@ -57,6 +58,7 @@ app/gplay/
 
 # Keystore files
 *.jks
+*.keystore
 
 # External native build folder generated in Android Studio 2.2 and later
 .externalNativeBuild
