@@ -2,7 +2,22 @@
  ~ SPDX-FileCopyrightText: 2017-2024 Nextcloud GmbH and Nextcloud contributors
  ~ SPDX-License-Identifier: GPL-3.0-or-later
 -->
-# [Nextcloud](https://nextcloud.com) Talk for Android :speech_balloon:
+# MSHost Talk для Android
+
+Брендированный вариант `genericRelease`, версия `25.1.0` (versionCode `250010090`), на основе
+Nextcloud Talk Android `25.1.0`. Отдельный пакет `org.mshostcloud.talk`,
+сервер https://cloud.mshostcloud.org.
+
+Реализация MSHost находится в ветке [`mshost`](https://github.com/BigShiShKa/mshost-talk-android/tree/mshost).
+Ветка `master` сохраняет upstream. Сборки доступны после входа на
+[MSHost Cloud](https://cloud.mshostcloud.org/apps/mshost_clients/).
+Состояние и ограничения: [эксплуатационная документация](https://github.com/BigShiShKa/MSHost-Docs).
+
+[Брендинг, сборка и настройка фоновых уведомлений](docs/mshost/README.md).
+Локальная сборка не является официальным релизом Nextcloud. Исходная документация,
+ссылки на магазины и статусы upstream ниже сохранены для справки.
+
+## [Nextcloud](https://nextcloud.com) Talk for Android — upstream
 
 [![Build Status](https://drone.nextcloud.com/api/badges/nextcloud/talk-android/status.svg)](https://drone.nextcloud.com/nextcloud/talk-android) [![Codacy Badge](https://app.codacy.com/project/badge/Grade/b89a720efbd24754984a776804913bca)](https://www.codacy.com/gh/nextcloud/talk-android/dashboard) [![Releases](https://img.shields.io/github/release/nextcloud/talk-android.svg)](https://github.com/nextcloud/talk-android/releases/latest) [![REUSE status](https://api.reuse.software/badge/github.com/nextcloud/talk-android)](https://api.reuse.software/info/github.com/nextcloud/talk-android)
 
